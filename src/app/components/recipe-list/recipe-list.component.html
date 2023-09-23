@@ -1,19 +1,6 @@
 <div class="alert alert-success" role="alert">Recipee app!</div>
 <h1>List of all recipes</h1>
-<p>recipe-list works!</p>
-<div *ngFor="let recipe of recipes" class="recipe card" style="width: 500px">
-  <h4 class="card-header">{{ recipe.title }}</h4>
-  <div class="card-header">
-    <div class="cover-photo-holder">
-      <img
-        src="{{
-          this.recipe.cover_photo
-            ? this.recipe.cover_photo
-            : 'assets/recipe-generic.jpg'
-        }}"
-        alt="Recipe Image"
-      />
-    </div>
-    <p>{{ recipe.description }}</p>
-  </div>
+
+<div *ngFor="let recipe of recipes">
+    <app-recipe-summary [recipe]="recipe"></app-recipe-summary>
 </div>

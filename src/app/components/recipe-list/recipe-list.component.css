@@ -1,26 +1,4 @@
-div.recipe
-{
-    float: left;
-    margin-right: 10px;
-    margin-left: 10px;
-    width: 600px;
-}
-
-div.recipe.h4
-{
-    font-size: 120%;
-}
-
-div.cover-photo-holder
-{
-    float: right;
-
-}
-
-div.cover-photo-holder img
-{
-    width: 150px; 
-    height: 150px;
-    margin: 5px;
-    
+h1 {
+    font-size: 150%;
+    margin-bottom: 50px;
 }
